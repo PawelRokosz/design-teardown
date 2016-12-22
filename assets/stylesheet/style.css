@@ -138,6 +138,7 @@ Container
 .menu{
   width: 10%;
   height: 2000px;
+  background: #696969
 }
 
 .links{
@@ -146,15 +147,34 @@ Container
 }
 
 .container{
-  background: grey;
-  width: 54%;
+  background: white;
+  width: 46%;
   height: 2000px;
 }
 
+.container .para{
+  padding-top: 100px;
+  max-width: 600px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.container .paragraph-text{
+  width: 90%;
+  height: 10px;
+  margin: 0 auto;
+  background: black;
+  margin-top: 5px;
+}
+
+.container .first-line{
+  height: 40px;
+}
+
 .more{
-  width: 20%;
+  width: 28%;
   height: 2000px;
-  background: green;
+  background: #696969;
 }
 
 /*
@@ -166,14 +186,14 @@ nav
 .logo{
   width: 150px;
   height: 100px;
-  background: red;
+  background: black;
   margin-bottom: 5px;
 }
 
 .menu-link{
   width: 150px;
   height: 50px;
-  background: red;
+  background: #BABABA;
   margin-bottom: 5px;
 }
 
@@ -189,20 +209,48 @@ links
 
 .link-box{
   width: 98%;
-  background: blue;
+  background: #696969;
   margin-top: 10px;
   margin-left: 5px;
+  padding: 5px 0;
 }
 
 .link-text{
   width: 90%;
   height: 20px;
-  background: yellow;
+  background: #BABABA;
   margin: 4px 9px;
 }
 
 .first-box{
   margin-top: 105px;
+}
+
+/*
+======================================
+More
+=========================================
+*/
+
+.more .tiny{
+  height: 40px;
+  width: 90%;
+  background: black;
+  margin: 50px auto 0;
+}
+
+.more .bigger{
+  height: 120px;
+  width: 80%;
+  background: black;
+  margin: 90px auto 0;
+}
+
+.more .bigest{
+  height: 200px;
+  width: 99%;
+  background: black;
+  margin: 50px auto 0;
 }
 
 /*
@@ -219,7 +267,7 @@ links
     }
 
     .container{
-      width: 64%;
+      width: 56%;
     }
 
     .logo{
@@ -230,6 +278,18 @@ links
       display: inline-block;
       width: 75px;
       height: 100px;
+    }
+
+    .first-box{
+      margin-top: 50px;
+    }
+
+    .more .tiny{
+      margin: 0 auto;
+    }
+
+    .container .para{
+      padding-top: 45px;
     }
 }
 
@@ -271,6 +331,14 @@ links
       margin: 0 auto;
       margin-bottom: 5px;
     }
+
+    .more .tiny{
+      display: none;
+    }
+
+    .more .bigger{
+      margin: 10px auto 0;
+    }
 }
 
 /*
@@ -290,7 +358,6 @@ links
 
     .menu-link{
       display: none;
-
     }
 
     .forever{
@@ -298,6 +365,9 @@ links
       height: 50px;
       width: 50px;
       margin-bottom: 25px;
+      margin-top: 25px;
+      background: #BABABA;
+      margin-right: 11px;
     }
 
     .menu-nav{
@@ -309,11 +379,7 @@ links
       float: left;
     }
 
-    .forever{
-      width: 50px;
-      height: 50px;
-      margin-top: 25px;
-      background: red;
-      margin-right: 11px;
+    .menu{
+      min-width: 295px;
     }
 }
